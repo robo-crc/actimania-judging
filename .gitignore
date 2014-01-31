@@ -1,5 +1,52 @@
+######################
+# Project
+######################
 */config/development
 */logs/log-*.php
 */logs/!index.html
 */cache/*
 */cache/!index.html
+
+######################
+# OS-generated files
+######################
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+######################
+# IDE & Tools files
+######################
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Eclipse
+.classpath
+.project
+.settings/
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# vi
+*~
+*.swp
+*.swo
+
+# Build & testing tools
+node_modules
+.vagrant
+
+######################
+# Logs and databases
+######################
+*.log
+*.sql
+*.sqlite
