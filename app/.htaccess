@@ -1,0 +1,13 @@
+RewriteEngine on
+RewriteBase /
+RewriteCond $1 !^(index\.php|user_guide|static|robots\.txt|favicon\.ico)
+RewriteRule ^(.*)$ index.php/$1 [L]
+
+#Set environment variables
+SetEnv APPLICATION_ENV development
+
+# Caching directives
+FileETag MTime Size
+
+# Appcache manifest mime type
+AddType text/cache-manifest .appcache
