@@ -2,7 +2,7 @@
 <head>
     <meta charset="utf-8">
     <title>CRC Robotics Judging</title>
-    <link rel="shortcut icon" href="http://www.robo-crc.ca/sites/robo-crc.ca/files/danland_favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="http://www.robo-crc.ca/favicon.ico" type="image/x-icon">
     <meta name="robots" content="noindex,nofollow" />
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
 
@@ -265,7 +265,6 @@
             right: 2px;
             top: 2px;
             padding: 0 1px;
-            font-size: 1.6em;
             font-size: 1.6em;
         }
 
