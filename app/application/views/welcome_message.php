@@ -5,7 +5,7 @@
         </div>
         <ul>
             <li>
-                <a href="#" class="results-button">Judging is over! Thanks :)</a>
+                <a href="<?= base_url() ?>judge/" class="results-button">Judge</a>
             </li>
             <li>
                 <a href="<?= base_url() ?>results/" class="results-button">Results</a>

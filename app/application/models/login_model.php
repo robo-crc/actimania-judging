@@ -9,7 +9,7 @@ class Login_model extends CI_Model {
 	}
 
 	public function login() {
-		/*
+
 		$this->db->where('email', $this->input->post('login_email'));
 		$this->db->where('pin', $this->input->post('login_pin'));
 		$this->db->where('state', 0); // 0 = enabled
@@ -32,7 +32,7 @@ class Login_model extends CI_Model {
 			$this->session->set_userdata($data);
 			return true;
 		}
-	*/
+
 		// If the previous process did not validate
 		// then return false.
 		return false;
