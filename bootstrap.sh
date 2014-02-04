@@ -86,7 +86,7 @@ cat << EOVHOST > /etc/apache2/sites-available/nemolition
 </VirtualHost>
 EOVHOST
 
-mysql -u root < /home/vagrant/judging/innstall.sql
+mysql -u root < /home/vagrant/judging/install.sql
 
 # Make sherpa the default virtual host
 unlink /etc/apache2/sites-enabled/000-default
