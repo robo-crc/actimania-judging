@@ -102,7 +102,7 @@ class Announce extends CI_Controller {
 			$this->email->from($this->from_address, $this->from_name);
 			$this->email->reply_to($this->reply_to, $this->from_name);
 			$this->email->to($judge['email']);
-			$this->email->subject("CRC Robotics Judging Application");
+			$this->email->subject("CRC Robotics Judging Instructions & Tips");
 
 			$message = 'Hello ' . $judge['firstname'] . ",\n";
 			$message .= "Thank you for agreeing to be a judge for the CRC Robotics \nNemolition 2014 competiton!\n\n";
