@@ -45,9 +45,11 @@ class Announce extends CI_Controller {
 		if (!$this->session->userdata('validated')) {
 			redirect('login');
 		}
+
+		// Only root can announce.
 		if ($this->session->userdata('judge_id') != 0 || $this->session->userdata('judge_id') != 1) {
 			header('HTTP/1.0 403 Forbidden');
-		} // Only root can announce.
+		}
 
 		$judges = $this->announce_model->get_judges();
 

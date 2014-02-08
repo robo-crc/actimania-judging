@@ -53,7 +53,7 @@ sudo apt-get -y install vim
 # Install server packages
 #
 # YES I KNOW THIS VERSION OF CODEIGNITER REQUIRES PHP5-MYSQLND WHICH USES MYSQL_CONNECT WHICH SUCKS AND IS DANGEROUS
-# SO PLEASE ACCEPT MY APOLOGIES AND COMPLAIN TO THE ORIGINAL MAINTAINERS 2 YEARS AGO IF YOU'RE REALLY SORE ABOUT IT.
+# SO PLEASE ACCEPT MY APOLOGIES AND COMPLAIN TO THE ORIGINAL CI MAINTAINERS 3 YEARS AGO IF YOU'RE REALLY SORE ABOUT IT.
 ###
 apt-get -y install apache2 apache2-mpm-prefork memcached mysql-client mysql-server
 apt-get -y install php5 php5-cgi php5-cli php5-dev php-pear spawn-fcgi libapache2-mod-php5
