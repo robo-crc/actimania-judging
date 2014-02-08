@@ -43,6 +43,7 @@ $lang['web-axis-2'] = "The site structure, page structure and menu design makes 
 $lang['web-axis-3'] = "There is some aspect of user / social interaction.";
 $lang['web-axis-4'] = "There are no uncaught exceptions, broken links or broken images.";
 $lang['web-axis-5'] = "The site’s code is well-formed and validates.";
+$lang['web-axis-6'] = "The site contains a clearly-identified tutorial (video, document, etc).";
 
 $lang['axis-comments'] = "Comments";
 
