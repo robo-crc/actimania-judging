@@ -15,7 +15,7 @@
             <?php
                 foreach ($rubric_matrix as $row)
                 {
-                    echo sprintf('<div id="%s" class="school sortable-element ui-state-default"xmlns="http://www.w3.org/1999/html"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><span class="schoolname">%s</span> <span class="schoollink"><a href="%s" target="_blank">[%s]</a></span>', $row['id'], $row['name'], $row['url'], lang('link'));
+                    echo sprintf('<div id="%s" class="school sortable-element ui-state-default" xmlns="http://www.w3.org/1999/html"><span class="ui-icon ui-icon-arrowthick-2-n-s"></span><span class="schoolname">%s</span> <span class="schoollink"><a href="%s" target="_blank">[%s]</a></span>', $row['id'], $row['name'], $row['url'], lang('link'));
 
                     if (($component == "video" ||  $component == "journalism") && $row !== false)
                     {
@@ -28,7 +28,8 @@
                         echo sprintf('<div class="progressbar" title="%s" data-value="%s"></div>', lang($component . '-axis-7'), $row[7]);
                         echo sprintf('<div class="comments">%s: %s</div>', lang('axis-comments'), htmlspecialchars($row['comments']));
                     } elseif ($component == "web" && $row !== false) {
-                        echo sprintf('<div class="progressbar" title="%s" data-value="%s"></div>', lang($component . '-axis-1'), $row[1]);
+	                    echo sprintf('<div class="boolean %s" title="%s"></div>', $row[6], lang($component . '-axis-6'));
+	                    echo sprintf('<div class="progressbar" title="%s" data-value="%s"></div>', lang($component . '-axis-1'), $row[1]);
                         echo sprintf('<div class="progressbar" title="%s" data-value="%s"></div>', lang($component . '-axis-2'), $row[2]);
                         echo sprintf('<div class="progressbar" title="%s" data-value="%s"></div>', lang($component . '-axis-3'), $row[3]);
                         echo sprintf('<div class="progressbar" title="%s" data-value="%s"></div>', lang($component . '-axis-4'), $row[4]);

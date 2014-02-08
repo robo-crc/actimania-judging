@@ -9,8 +9,8 @@ class Results extends CI_Controller {
 	public function __construct() {
 		parent::__construct();
 
-//        if ($this->session->userdata('judge_id') == 0 || $this->session->userdata('judge_id') == 1) $this->output->enable_profiler(TRUE);
-//        $this->output->enable_profiler(TRUE);
+        if ($this->session->userdata('judge_id') == 0 || $this->session->userdata('judge_id') == 1) $this->output->enable_profiler(TRUE);
+        $this->output->enable_profiler(TRUE);
 
 		$this->load->model('main_model');
 		$this->load->library('table');
@@ -91,7 +91,11 @@ class Results extends CI_Controller {
 		echo "<table><tbody>";
 		foreach ($schools as $school) {
 			// TODO Refactor so blanks don't go nowhere.
-			echo sprintf('<tr><td>%s</td><td><a href="%s">Video</a></td><td><a href="%s">Web</a></td></tr>', $school['name'], $school['video'], $school['web']);
+			echo sprintf('<tr><td>%s</td><td><a href="%s">Video</a></td><td><a href="%s">Web</a></td></tr>',
+				($school['name'] === null ? "#" : $school['name']),
+				($school['video'] === null ? "#" : $school['video']),
+				($school['web'] === null ? "#" : $school['web'])
+			);
 		}
 		echo "</tbody></table>";
 	}

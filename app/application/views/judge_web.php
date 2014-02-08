@@ -17,6 +17,17 @@ $i = 1;
             <legend>Reminders</legend>
 
             <ol>
+	            <li>
+		            <?php
+		            echo form_label(lang($component . '-axis-6'), 'axis-6', array('class' => 'axis-text' ));
+		            echo form_checkbox( array(
+			            'name' => 'axis-6',
+			            'id' => 'axis-6',
+			            'value' => 'tutorial',
+			            'checked' => false,
+		            ));
+		            ?>
+	            </li>
                 <?php for($i; $i <= 5; $i++) { ?>
                 <li>
                     <p class="axis-text"><?= lang($component . '-axis-' . $i) ?></p>

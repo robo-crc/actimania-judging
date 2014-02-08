@@ -34,7 +34,7 @@ class Main_model extends CI_Model {
 				$this->db->select('1, 2, 3, 4, 5, 6, 7, comments');
 				break;
 			case "web":
-				$this->db->select('1, 2, 3, 4, 5, comments');
+				$this->db->select('1, 2, 3, 4, 5, 6, comments');
 				break;
 			default:
 				return true;
@@ -58,7 +58,7 @@ class Main_model extends CI_Model {
 				$this->db->select('schools.id, schools.name,schools.journalism AS url, 1, 2, 3, 4, 5, 6, 7, comments');
 				break;
 			case "web":
-				$this->db->select('schools.id, schools.name, schools.web AS url, 1, 2, 3, 4, 5, comments');
+				$this->db->select('schools.id, schools.name, schools.web AS url, 1, 2, 3, 4, 5, 6, comments');
 				break;
 			default:
 				return true;
@@ -170,6 +170,7 @@ class Main_model extends CI_Model {
 		$values['comments'] = $post['comment'];
 		$values['total'] = null;
 
+		array_key_exists('axis-6', $post) != null ? $values['6'] = 'true' : $values['6'] = 'false';
 		for ($i = 1; $i <= 5; $i++) {
 			$values[$i] = $post['axis-' . $i];
 			$values['total'] += $post['axis-' . $i];

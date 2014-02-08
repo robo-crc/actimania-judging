@@ -75,7 +75,7 @@
 	<h1>Results !</h1>
 
 	<div id="body">
-		<p class="main">Results will be available on the last day of the competition: 23 February 2013.</p>
+		<p class="main">Results will be available on the last day of the competition: 23 February 2014.</p>
         <p class="main">
             <a href="<?= base_url(); ?>">Go back...</a>
         </p>
