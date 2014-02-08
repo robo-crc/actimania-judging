@@ -63,7 +63,14 @@ class Announce extends CI_Controller {
 
 			$message = 'Hello ' . $judge['firstname'] . ",\n";
 			$message .= "Thank you for agreeing to be a judge for the CRC Robotics Nemolition 2014 competiton!\n\n";
+
+			$message .= "Before judging, please consult the rule book so that you may understand specifically \n";
+			$message .= "what we have asked of the students. It is available in English and French here:\n http://www.robo-crc.ca/nemolition-2014-rulebook-update-2/\n\n";
+
+			$message .= "Video judges: the intro sequence doesn't count toward the total time limit for the video.\n\n";
+
 			$message .= 'You may connect to the site at ' . $this->url . ' with this email address and your PIN: ' . $judge['pin'] . "\n\n";
+
 			$message .= "If you have any questions, simply reply to this email and I will do my best to help.\n\n";
 			$message .= "Sincerely,\n";
 			$message .= $this->from_name;
