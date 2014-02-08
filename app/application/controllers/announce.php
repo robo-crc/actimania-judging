@@ -78,9 +78,8 @@ class Announce extends CI_Controller {
 			$this->email->message($message);
 
 			$this->email->send();
-			if ($this->session->userdata('judge_id') == 0 || $this->session->userdata('judge_id') == 1) {
-				echo $this->email->print_debugger();
-			}
+
+			echo $this->email->print_debugger();
 		}
 	}
 }

@@ -13,7 +13,7 @@ class Announce_model extends CI_Model {
 	 */
 	public function get_judges() {
 		$this->db->select('email, firstname, lastname, pin');
-		$this->db->where('id >= 10'); // Admins < 10
+		$this->db->where('id > 0'); // Admins < 10
 		$this->db->where('state', 0); // Not suspended
 		$people = $this->db->get('users')->result_array();
 
