@@ -160,10 +160,15 @@ class Announce extends CI_Controller {
 			$message .= "robotics competition.\n\n";
 
 			$message .= "This is a friendly reminder that we need your individual entries AND overall rankings by February 19th\n";
-			$message .= "so that we can compile results in time for the competition.";
+			$message .= "so that we can compile results in time for the competition.\n\n";
 
-			$message .= "If you have already completed your individual and overall rankings, please accept our thanks\n";
-			$message .= "and disregard this message.\n\n";
+			$message .= "We can prolong judging up until Feb 21, if need be. But that's the *last possible* ";
+			$message .= "day we have to work with.\n\n";
+
+			$message .= "We value your contribution greatly and need all the judges we can get.\n\n";
+
+//			$message .= "If you have already completed your individual and overall rankings, please accept our thanks\n";
+//			$message .= "and disregard this message.\n\n";
 
 			$message .= "REMINDERS:\n";
 			$message .= "- For a tutorial on how the judging system works: http://www.youtube.com/watch?v=B1o5f-Z2hOU \n\n";
