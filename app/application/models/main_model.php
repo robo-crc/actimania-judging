@@ -291,7 +291,7 @@ class Main_model extends CI_Model {
 	 * @param null $school_id
 	 * @return bool
 	 */
-	public function get_school_matrix($component = null, $school_id = null) {
+	public function get_school_matrix($component = null, $school_id = null, $result_key = null) {
 		// Web, Journalism and Video have different rubric values
 		switch ($component) {
 			case "video":
@@ -307,6 +307,7 @@ class Main_model extends CI_Model {
 				return true;
 		}
 		$this->db->where('school_id', $school_id);
+		$this->db->where('result_key', $result_key);
 		$this->db->join('schools', 'schools.id = ' . $component . '_rubric.school_id');
 
 		return $this->db->get($component . "_rubric")->result_array();

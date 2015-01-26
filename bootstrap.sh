@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 ###
-# Vagrant Bootstrap for the CRC Nemolition 2014 Judging
+# Vagrant Bootstrap for the CRC Actimania 2015 Judging
 # 
 # @author Michael Sanford
 # @description This script is run within with Vagrant virtual machine and configures

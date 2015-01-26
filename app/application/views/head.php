@@ -348,7 +348,7 @@
 <body>
 <header>
     <h1>
-        Nemolition 2014
+        Actimania 2015
     </h1>
     <div class="top-buttons">
         <div class="help-button">

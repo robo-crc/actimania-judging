@@ -106,8 +106,9 @@ class Results extends CI_Controller {
 		$data['component'] = $this->input->get('c');
 		$data['points'] = $this->input->get('p');
 		$data['rank'] = $this->input->get('r');
+		$data['result_key'] = $this->input->get('k');
 
-		$data['cards'] = $this->main_model->get_school_matrix($data['component'], $data['school_id']);
+		$data['cards'] = $this->main_model->get_school_matrix($data['component'], $data['school_id'],  $data['result_key']);
 
 		$this->load->view('head');
 		$this->load->view('team_report', $data);

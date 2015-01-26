@@ -62,10 +62,10 @@ class Announce extends CI_Controller {
 			$this->email->subject("CRC Robotics Judging Application");
 
 			$message = 'Hello ' . $judge['firstname'] . ",\n";
-			$message .= "Thank you for agreeing to be a judge for the CRC Robotics Nemolition 2014 competiton!\n\n";
+			$message .= "Thank you for agreeing to be a judge for the CRC Robotics Actimania 2015 competiton!\n\n";
 
 			$message .= "Before judging, please consult the rule book so that you may understand specifically \n";
-			$message .= "what we have asked of the students. It is available in English and French here:\n http://www.robo-crc.ca/nemolition-2014-rulebook-update-2/\n\n";
+			$message .= "what we have asked of the students. It is available in English and French here:\n http://www.robo-crc.ca/en/actimania-official-rulebook/\n\n";
 
 			$message .= "Video judges: the intro sequence doesn't count toward the total time limit for the video.\n\n";
 
@@ -94,7 +94,7 @@ class Announce extends CI_Controller {
 			header('HTTP/1.0 403 Forbidden');
 		}
 
-		$judges = $this->announce_model->get_judges(10);
+		$judges = $this->announce_model->get_judges();
 
 		foreach ($judges as $judge) {
 			$this->email->clear();
@@ -108,14 +108,15 @@ class Announce extends CI_Controller {
 			$message .= "You are receiving this email because you have previously been a judge for the CRC\n";
 			$message .= "robotics competition, and have expressed an interest in being included in future competitions.\n";
 			$message .= "We value greatly your input and contribution, and thank you for your interest in this year's competition,\n";
-			$message .= "CRC Robotics \nNemolition 2014 !\n\n";
+			$message .= "CRC Robotics \nActimania 2015 !\n\n";
 
 			$message .= "REMINDERS:\n";
 			$message .= "- For a tutorial on how the judging system works: http://www.youtube.com/watch?v=B1o5f-Z2hOU \n\n";
 			$message .= "- The individual judging forms you fill out, including comments, are visible\n";
 			$message .= "  to students. They appreciate constructive feedback, so please don't be shy!\n\n";
 			$message .= "- Check out the rule book's sections that you are judging: \n\n";
-			$message .= "  In English and French here:\n http://www.robo-crc.ca/nemolition-2014-rulebook-update-2/\n\n";
+			$message .= "  In English here:\n http://www.robo-crc.ca/en/actimania-official-rulebook/\n\n";
+			$message .= "  En français:\n http://www.robo-crc.ca/fr/actimania-official-rulebook/\n\n";
 
 			$message .= "Video judges: the intro sequence doesn't count toward the total time limit for the video.\n\n";
 
@@ -145,7 +146,7 @@ class Announce extends CI_Controller {
 			header('HTTP/1.0 403 Forbidden');
 		}
 
-		$judges = $this->announce_model->get_judges(10);
+		$judges = $this->announce_model->get_judges();
 
 		foreach ($judges as $judge) {
 			$this->email->clear();
@@ -156,7 +157,7 @@ class Announce extends CI_Controller {
 			$this->email->subject("CRC Robotics Judging Reminder");
 
 			$message = 'Hello ' . $judge['firstname'] . ",\n\n";
-			$message .= "You are receiving this email because you are a judge for CRC Robotics \nNemolition 2014\n";
+			$message .= "You are receiving this email because you are a judge for CRC Robotics \nActimania 2015\n";
 			$message .= "robotics competition.\n\n";
 
 			$message .= "This is a friendly reminder that we need your individual entries AND overall rankings by February 19th\n";
@@ -175,7 +176,7 @@ class Announce extends CI_Controller {
 			$message .= "- The individual judging forms you fill out, including comments, are visible\n";
 			$message .= "  to students. They appreciate constructive feedback, so please don't be shy!\n\n";
 			$message .= "- Check out the rule book's sections that you are judging: \n\n";
-			$message .= "  In English and French here:\n http://www.robo-crc.ca/nemolition-2014-rulebook-update-2/\n\n";
+			$message .= "  In English and French here:\n http://www.robo-crc.ca/en/actimania-official-rulebook/\n\n";
 
 			$message .= "Video judges: the intro sequence doesn't count toward the total time limit for the video.\n\n";
 
@@ -217,7 +218,7 @@ class Announce extends CI_Controller {
 
 			$message = 'Hello ' . $judge['firstname'] . ",\n\n";
 
-			$message .= "You are receiving this email because you are a judge for CRC Robotics \nNemolition 2014\n";
+			$message .= "You are receiving this email because you are a judge for CRC Robotics \nActimania 2015\n";
 			$message .= "robotics competition.\n\n";
 
 			$message .= "On behalf of all the CRC Committee Organizers and competing teams, we would like to";
